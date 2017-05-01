@@ -214,33 +214,25 @@ h2.section-title {
 }
 .position,
 .company,
-.organization,
 .institution,
 .date,
 .area,
-.studyType,
-.title,
-.awarder {
+.studyType {
     display: inline-block;
 }
 .position,
 .studyType,
 .area,
-.title,
 .language,
 .name {
     font-weight: 600;
 }
 .company::before,
-.institution::before,
-.organization::before,
-.awarder::before {
+.institution::before {
     content: "at "
 }
 .company,
-.institution,
-.organization,
-.awarder {
+.institution{
     color: #606d76;
     font-weight: 400;
 }
@@ -250,8 +242,7 @@ h2.section-title {
     padding: .1em 0;
     font-weight: 600;
 }
-ul.keywords,
-ul.courses {
+ul.keywords{
     margin-top: .5em;
 }
 ul.keywords li,
@@ -274,67 +265,21 @@ ul.courses li:hover {
 .item {
     padding: .5em 0;
 }
-.gpa {
-    padding-bottom: .5em;
-}
+
 .fa.social {
     font-size: 1.1em;
 }
 /* Social Media Brand Colors */
-.google-plus {
-    color: #dd4b39;
-}
-.tumblr {
-    color: #32506d;
-}
-.foursquare {
-    color: #0072b1;
-}
-.facebook {
-    color: #3b5998;
-}
 .linkedin {
     color: #007bb6;
-}
-.pinterest {
-    color: #cb2027;
-}
-.dribbble {
-    color: #ea4c89;
-}
-.instagram {
-    color: #517fa4;
 }
 .twitter {
     color: #00aced;
 }
-.soundcloud {
-    color: #ff3a00;
-}
-.wordpress {
-    color: #21759b;
-}
-.youtube {
-    color: #bb0000;
-}
 .github {
     color: #171515;
 }
-.stack-overflow {
-    color: #828386;
-    position: relative;
-}
-.flickr {
-    color: #ff0084;
-}
-.stack-overflow::after {
-    position: absolute;
-    left: 0;
-    content: '\f16c';
-    color: #f68a1f;
-    overflow: hidden;
-    height: 40%;
-}
+
 #languages .item,
 #skills .item,
 #interests .item {
@@ -435,9 +380,7 @@ ul.courses li:hover {
         margin-left: 1.67rem;
     }
     .company::before,
-    .institution::before,
-    .organization::before,
-    .awarder::before {
+    .institution::before {
         content: "| ";
     }
     .header-left {
@@ -583,7 +526,26 @@ ul.courses li:hover {
 					<div id="contact">
 						<div class="email">
               <span class="fa fa-envelope-o"></span>
-							<a href="/cdn-cgi/l/email-protection#c4a2a5b0adacb7a1aab0b1b6af84a1aaa3adaaa1a1b6eaa7aba9"><span class="__cf_email__" data-cfemail="442225302d2c37212a3031362f04212a232d2a2121366a272b29">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a>
+							<a href="/cdn-cgi/l/email-protection#c4a2a5b0adacb7a1aab0b1b6af84a1aaa3adaaa1a1b6eaa7aba9">
+                                <span class="__cf_email__" data-cfemail="442225302d2c37212a3031362f04212a232d2a2121366a272b29">[email&#160;protected]</span>
+                                <script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */
+                                !function(t,e,r,n,c,a,p){
+                                    try{
+                                        t=document.currentScript||function(){
+                                                    for(t=document.getElementsByTagName('script'),e=t.length;e--;)
+                                                        if(t[e].getAttribute('data-cfhash'))
+                                                            return t[e]
+                                                }();
+                                        if(t&&(c=t.previousSibling)) {
+                                            p=t.parentNode;
+                                            if(a=c.getAttribute('data-cfemail')){
+                                                for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)
+                                                    e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);
+                                                p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)
+                                        }
+                                    }catch(u){}
+                                }()/* ]]> */
+                                </script></a>
 						</div>
 						<div class="phone">
               <span class="fa fa-mobile"></span>
@@ -638,7 +600,7 @@ ul.courses li:hover {
 
 				<section class="section margin1">
 					<header>
-						<h2 class='section-title'>Skills</h2>
+						<h2 class='section-title'>Yetenekler</h2>
 					</header>
 					<section id="skills">
                         <div class="item">
@@ -713,7 +675,7 @@ ul.courses li:hover {
 
 				<section class="section">
 					<header>
-						<h2 class='section-title'>Work Experience <span class="item-count">(5)</span></h2>
+						<h2 class='section-title'>İş & Staj Tecrübeleri <span class="item-count">(5)</span></h2>
 					</header>
 					<section id="work">
                         <header>
@@ -724,14 +686,14 @@ ul.courses li:hover {
                                 Yazılım Mühendisi
                             </div>
                             <div class="company">
-                                SBM[Sigorta Bilgi ve Gözetim Merkezi]
+                                SBM [Sigorta Bilgi ve Gözetim Merkezi]
                             </div>
                             <div class="date">
                                 <span class="startDate">
-                                    Eylül 2016
+                                    Eyl 2016
                                 </span>
                                 <span class="endDate">
-                                    Devam.
+                                    - Devam.
                                 </span>
                             </div>
                         </header>
@@ -740,18 +702,17 @@ ul.courses li:hover {
                             </span>
                             <div class="item display" style="opacity:1">
                                 <div class="summary">
-                                    <p><p>Sigorta Bilgi ve Gözetim Merkezi [SBM], Türkiye'de ki tüm sigorta şirketlerinin verilerinin toplandığı,
+                                    <p>Sigorta Bilgi ve Gözetim Merkezi [SBM], Türkiye'de ki tüm sigorta şirketlerinin verilerinin toplandığı,
                                     yorumlandığı ve işlendiği bir teknoloji şirketdir. Bunun yanında DASK, Sigorta Tahkim Komisyonu kurumların da teknoloji ihtiyaçlarına
-                                    çözümler sunmaktadır.
-                                </p></p>
+                                    çözümler sunmaktadır.</p>
                                 </div>
                                 <ul class="highlights">
-                                    <li>SBM[Sigorta Bilgi ve Gözetim Merkezi]</li>
-                                    <li>SBM[Sigorta Bilgi ve Gözetim Merkezi]</li>
-                                    <li>SBM[Sigorta Bilgi ve Gözetim Merkezi]</li>
+                                    <li>Spring Core, AOP, MVC & Hibernate ile Web uygulamaları geliştirme.</li>
+                                    <li>SOAP Based WS, JAX-WS</li>
+                                    <li>JSP, jQuery ile ön yüz geliştirme</li>
+                                    <li>Eclipse IDE, Oracle DB, Weblogic App Server, Jenkins CI</li>
                                 </ul>
                             </div>
-
 								<header>
 									<span class="space-left">
 											<span class="fa fa-caret-right"></span>
@@ -764,10 +725,10 @@ ul.courses li:hover {
 									</div>
 									<div class="date">
 										<span class="startDate">
-											Ekim 2015
+											Eki 2015
 										</span>
 										<span class="endDate">
-											Şubat 2016
+											- Şub 2016
 										</span>
 									</div>
 								</header>
@@ -776,12 +737,13 @@ ul.courses li:hover {
                                 </span>
 								<div class="item display none" style="opacity:0">
 									<div class="summary">
-										<p><p>Kolektif Labs Mobil & Web ve IoT Teknolojileri üreten bir girişimdir.</p></p>
+										<p>Kolektif Labs Mobil & Web ve IoT Teknolojileri üreten bir girişimdir.</p>
 									</div>
 									<ul class="highlights">
-											<li>Mobil ve Back-end Developer olarak görev aldım</li>
-											<li>Android için Java ve popüler android kütüphaneleri</li>
-											<li>Back-end için Nodejs/Express çeşitli npm modülleri ve MongoDB kullanıldı.</li>
+                                        <li>Mobil ve Back-End Developer olarak görev aldım.</li>
+                                        <li>Android için Java ve popüler android kütüphaneleri.</li>
+                                        <li>Android Studio, Gradle. Retrofit okHttp</li>
+                                        <li>Back-End için NodeJS/Express çeşitli NPM modülleri ve MongoDB kullanıldı.</li>
 									</ul>
 							    </div>
 
@@ -797,10 +759,10 @@ ul.courses li:hover {
 									</div>
 									<div class="date">
 										<span class="startDate">
-											Haziran 2015
+											Haz 2015
 										</span>
 										<span class="endDate">
-                                            Temmuz 2015
+                                            - Tem 2015
 										</span>
 									</div>
 								</header>
@@ -809,14 +771,14 @@ ul.courses li:hover {
                                 </span>
 								<div class="item display none" style="opacity:0">
 									<div class="summary">
-										<p><p>OBSS, Atlassian premium partner olarak Atlassian ürünlerinde müşterilerine çözümler sunan, bunun yanında Web Mobil Teknolojiler sunan bir firmadır.</p></p>
+										<p>OBSS, Atlassian premium partner olarak Atlassian ürünlerinde müşterilerine çözümler sunan, bunun yanında Web Mobil Teknolojiler sunan bir firmadır.</p>
 									</div>
 									<ul class="highlights">
                                         <li>Atlassian Jira üzerinde iş akışı geliştirme ve plugin development ile ilgilenildi.</li>
-                                        <li>BE için Java Servlet ve Atlassian SDK, FE için Html/Css ve JS kullanıldı.</li>
+                                        <li>Back-End tarafında Java Servlet ve Atlassian Plugin SDK, ön yüz tarafında Html/Css ve JS kullanıldı.</li>
+                                        <li>Maven, Apache Tomcat</li>
 									</ul>
 							    </div>
-
 								<header>
 									<span class="space-left">
                                         <span class="fa fa-caret-right"></span>
@@ -829,10 +791,10 @@ ul.courses li:hover {
 									</div>
 									<div class="date">
 										<span class="startDate">
-											Ağustos 2014
+											Ağu 2014
 										</span>
 										<span class="endDate">
-											Eylül 2014
+											- Eyl 2014
 										</span>
 									</div>
 								</header>
@@ -841,7 +803,7 @@ ul.courses li:hover {
                                 </span>
 								<div class="item display none" style="opacity:0">
 									<div class="summary">
-										<p><p>Digiturk Türkiye'nin önde gelen kablolu yayın yapan kuruluşlarından biridir.</p></p>
+										<p>Digiturk Türkiye'nin önde gelen kablolu yayın yapan kuruluşlarından biridir.</p>
 									</div>
 									<ul class="highlights">
                                         <li>BigData konuları ve teknolojileri üzerine incelemeler yapıldı.</li>
@@ -861,10 +823,10 @@ ul.courses li:hover {
 									</div>
 									<div class="date">
 										<span class="startDate">
-											Nisan 2014
+											May 2014
 										</span>
 										<span class="endDate">
-											Ağustos 2014
+											- Ağu 2014
 										</span>
 									</div>
 								</header>
@@ -873,11 +835,12 @@ ul.courses li:hover {
                                 </span>
 								<div class="item display none" style="opacity:0">
 									<div class="summary">
-										<p><p>Kuveyt Türk uluslararası alanda hizmet veren bir katılım bankasıdır.</p></p>
+										<p>Kuveyt Türk uluslararası alanda hizmet veren bir katılım bankasıdır.</p>
 									</div>
 									<ul class="highlights">
                                         <li>Finansal uygulamaların tasarımı ve geliştirilmesi üzerinde çalışıldı.</li>
-                                        <li>Uygulama geliştirme dili C# ve Xaml, veri tabanı olarak Sql Server, geliştirme platformu VS kullanıldı.</li>
+                                        <li>Uygulama geliştirme dili C#, ekran tasarımları için Xaml. </li>
+                                        <li>Veri tabanı olarak SQL Server, geliştirme platformu VS kullanıldı.</li>
 									</ul>
 							    </div>
 					</section>
@@ -886,7 +849,7 @@ ul.courses li:hover {
 
 				<section class="section">
 					<header>
-						<h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+						<h2 class='section-title'>Eğitim <span class="item-count">(2)</span></h2>
 					</header>
 					<section id="education">
 							<header class="clear">
@@ -906,16 +869,13 @@ ul.courses li:hover {
 								</div>
 								<div class="date">
 									<span class="startDate">
-										2010
+										2011
 									</span>
 									<span class="endDate">
 										- 2016
 									</span>
 								</div>
 							</header>
-
-
-
 								<div class="item display" style="opacity:1">
 							</div>
 							<header class="clear">
@@ -942,24 +902,18 @@ ul.courses li:hover {
 									</span>
 								</div>
 							</header>
-
-
-
 								<div class="item display none" style="opacity:0">
 							</div>
 					</section>
 				</section>
-
-
-
 				<section class="section margin1">
 					<header>
-						<h2 class='section-title'>Languages</h2>
+						<h2 class='section-title'>Diller</h2>
 					</header>
 					<section id="languages">
 							<div class="display">
 										<h3 class="language">
-											English
+											İngilizce
 										</h3>
 								<div class="item">
 										<div class="level advanced">
@@ -973,12 +927,12 @@ ul.courses li:hover {
 
 				<section class="section margin1">
 					<header>
-						<h2 class='section-title' class='section-title'>Interests</h2>
+						<h2 class='section-title' class='section-title'>İlgi Alanları</h2>
 					</header>
 					<section id="interests">
 							<div class="item">
 									<h3 class="name">
-										Enterpreneurship
+										Girişimcilik
 									</h3>
 									<ul class="keywords">
 											<li>Startup</li>
@@ -986,28 +940,18 @@ ul.courses li:hover {
 											<li>endeavor fellow</li>
 									</ul>
 							</div>
+
 							<div class="item">
 									<h3 class="name">
-										Electronics &amp; IoT
+										Yüzme
 									</h3>
 									<ul class="keywords">
-											<li>Arduino</li>
-											<li>RasPi</li>
-											<li>Drones</li>
-									</ul>
-							</div>
-							<div class="item">
-									<h3 class="name">
-										Swimming
-									</h3>
-									<ul class="keywords">
-											<li>long-distance swimming</li>
-											<li>Bosphorus Cross-Continental</li>
+                                        <li>long-distance swimming</li>
+                                        <li>Bosphorus Cross-Continental</li>
 									</ul>
 							</div>
 					</section>
 				</section>
-
 		</div>
 		<script>
 			(function(){
@@ -1048,6 +992,31 @@ ul.courses li:hover {
 				elements.style.opacity = '1';
 			})();
 		</script>
-	<script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
+	<script type="text/javascript">/* <![CDATA[ */
+        (function(d,s,a,i,j,r,l,m,t) {
+            try{
+                l=d.getElementsByTagName('a');
+                t=d.createElement('textarea');
+                for(i=0;l.length-i;i++){
+                    try{
+                        a=l[i].href;
+                        s=a.indexOf('/cdn-cgi/l/email-protection');
+                        m=a.length;
+                        if(a&&s>-1&&m>28){
+                            j=28+s;
+                            s='';
+                            if(j<m){
+                                r='0x'+a.substr(j,2)|0;
+                                for(j+=2;j<m&&a.charAt(j)!='X';j+=2)
+                                    s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);
+                                j++;
+                                s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');
+                            l[i].href='mailto:'+t.value
+                        }
+                    }catch(e){}
+                }
+            }catch(e){}
+        })(document);/* ]]> */
+    </script></body>
 
 </html>
